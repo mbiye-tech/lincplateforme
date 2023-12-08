@@ -5,7 +5,7 @@ env: flexible
 threadsafe: true
 env_variables:
   APP_DEBUG: 'True'
-  APP_ENV: dev
+  APP_ENV: production
   APP_KEY: base64:IJoTuBv4hZ048XKW+Ss/mGBEEtmN0p4MI3zHDaJLAvg=
   APP_LOG: daily
   APP_TIMEZONE: UTC
@@ -13,7 +13,7 @@ env_variables:
   DB_CONNECTION: mysql
   SESSION_DRIVER: lincdb
   DB_DATABASE: lincbd
-  DB_HOST: 127.0.0.1
+  DB_HOST: 34.172.68.20
   DB_PASSWORD: linc@2023
   DB_PORT: '3306'
   DB_SOCKET: /cloudsql/appdeploy-402517:us-central1:lincbd
@@ -48,4 +48,4 @@ readiness_check:
 service_account: lincdeploiement-4tr2pltbuq-uc.a.run.app
 
 beta_settings:
-cloud_sql_instances: appdeploy-402517:us-central1:lincbd
+cloud_sql_instances: appdeploy-402517:us-central1:lincbd =tcp:3306
