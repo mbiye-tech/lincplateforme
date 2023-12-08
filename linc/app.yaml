@@ -48,4 +48,4 @@ readiness_check:
 service_account: lincdeploiement-4tr2pltbuq-uc.a.run.app
 
 beta_settings:
-cloud_sql_instances: appdeploy-402517:us-central1:lincbd =tcp:3306
+cloud_sql_instances: appdeploy-402517:us-central1:lincbd
