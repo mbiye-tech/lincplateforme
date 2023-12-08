@@ -5,7 +5,7 @@ env: flexible
 threadsafe: true
 env_variables:
   APP_DEBUG: 'True'
-  APP_ENV: production
+  APP_ENV: dev
   APP_KEY: base64:IJoTuBv4hZ048XKW+Ss/mGBEEtmN0p4MI3zHDaJLAvg=
   APP_LOG: daily
   APP_TIMEZONE: UTC
