@@ -1,1 +1,0 @@
-<?php $timezone = 'Africa/Kinshasa' ?>
