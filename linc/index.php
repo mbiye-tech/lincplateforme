@@ -16,7 +16,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-/* if (file_exists($maintenance = __DIR__ . '/core/storage/framework/maintenance.php')) {
+ if (file_exists($maintenance = __DIR__ . '/core/storage/framework/maintenance.php')) {
     require $maintenance;
 }
 
@@ -53,3 +53,5 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
+
+?>
