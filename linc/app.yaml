@@ -1,5 +1,4 @@
 
-
 runtime: php
 api_version: '1.0'
 env: flexible
@@ -13,8 +12,8 @@ env_variables:
   CACHE_DRIVER: lincdb
   DB_CONNECTION: mysql
   SESSION_DRIVER: lincdb
-  DB_DATABASE: lincbd
-  DB_HOST: 34.172.68.204
+  DB_DATABASE: lincdb
+  DB_HOST: 34.172.68.20
   DB_PASSWORD: linc@2023
   DB_PORT: '3306'
   DB_SOCKET: /cloudsql/appdeploy-402517:us-central1:lincbd
@@ -30,8 +29,8 @@ env_variables:
 
 automatic_scaling:
   cool_down_period: 120s
-  min_num_instances: 2
-  max_num_instances: 20
+  min_num_instances: 1
+  max_num_instances: 10
   cpu_utilization:
     target_utilization: 0.5
 liveness_check:
@@ -49,4 +48,4 @@ readiness_check:
 service_account: lincdeploiement-4tr2pltbuq-uc.a.run.app
 
 beta_settings:
-cloud_sql_instances: appdeploy-402517:us-central1:lincbd
+cloud_sql_instances: appdeploy-402517:us-central1:lincbd =tcp:3306
