@@ -45,7 +45,7 @@ readiness_check:
   failure_threshold: 2
   success_threshold: 2
   app_start_timeout_sec: '300'
-service_account: lincdeploiement-4tr2pltbuq-uc.a.run.app
+service_account: https://lingplateforme-4tr2pltbuq-nn.a.run.app
 
 beta_settings:
 cloud_sql_instances: appdeploy-402517:us-central1:lincbd
