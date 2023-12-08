@@ -1,18 +1,20 @@
-runtime: php
+runtime: php81
 api_version: '1.0'
-env: flexible
+env: standard
 threadsafe: true
 env_variables:
   APP_DEBUG: 'True'
   APP_ENV: production
   APP_KEY: base64:IJoTuBv4hZ048XKW+Ss/mGBEEtmN0p4MI3zHDaJLAvg=
   APP_LOG: daily
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
   APP_TIMEZONE: UTC
   CACHE_DRIVER: lincdb
   DB_CONNECTION: mysql
   SESSION_DRIVER: lincdb
   DB_DATABASE: lincdb
-  DB_HOST: 34.172.68.20
+  DB_HOST: 127.0.0.1
   DB_PASSWORD: linc@2023
   DB_PORT: '3306'
   DB_SOCKET: /cloudsql/appdeploy-402517:us-central1:lincbd
@@ -25,6 +27,16 @@ env_variables:
   MAIL_PORT: '587'
   MAIL_USERNAME: sparkpost_username
   QUEUE_DRIVER: lincdb
+
+  PUSHER_APP_ID : 
+  PUSHER_APP_KEY : 
+  PUSHER_APP_SECRET : 
+  PUSHER_APP_CLUSTER : mt1
+
+  APP_SERVICES_CACHE : /tmp/services.php 
+  APP_PACKAGES_CACHE : /tmp/packages.php 
+  APP_CONFIG_CACHE : /tmp/config.php 
+  APP_ROUTES_CACHE : /tmp/routes.php
 
 automatic_scaling:
   cool_down_period: 120s
